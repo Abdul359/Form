@@ -8,20 +8,19 @@ height:100vh;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    padding:50px;
+    width:80%;
+    margin:0 auto;
 }
 .form{
     padding:20px;
-    width:40%;
+    margin:0 auto;
 }
 .form__element{
     position: relative;
     border:none;
     margin-bottom:20px;
-    /* border:red solid 2px; */
-
+    width:100%;
 }
-
 .form__element-i{
     position:absolute;
     padding: 0px 10px;
@@ -45,12 +44,10 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding:8px 0 8px 40px;
     font-size:16px;
     border:none;
-    border-bottom:#ddd5d5 solid 0.5px;
     transition-property: all;
     transition-duration: .5s;
     transition-timing-function: ease-in;
 }
-
 .form__btn{
     cursor: pointer;
     outline:none;
@@ -65,23 +62,17 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .extra::after{
     content:"";
     position: absolute;
-    top:37px;
+    bottom:0px;
     left:0px;
     height:1px;
-    width:30px;
+    width:0px;
     background:#23424a;
-    transform: scaleX(0);
-    transform-origin: left;
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: ease-in; 
 }
 .form__element-input:focus ~  .extra::after{
-    transform: scaleX(8);    
+    width:200px;
 }
 
-/* note it is not mobilefirst Approach */
-@media (max-width:850px){
 
-
-}
